@@ -24,7 +24,7 @@ Production-grade SEO audit CLI tool that crawls websites, analyzes SEO structure
 
 ### Clone the repository:
 ```bash
-git clone https://github.com/robert-calvin-dev/seo-auditor.git
+git clone https://github.com/robbiecalvin/seo-auditor.git
 cd seo-auditor
 ```
 
@@ -89,4 +89,4 @@ This project is licensed under the MIT License.
 **Robert Mitchell** — AI & Web Developer / Prompt Engineer
 
 - [Docker Hub Repository](https://hub.docker.com/repository/docker/robertcalvindev/seo-auditor/general)
-- [GitHub Repository](https://github.com/robert-calvin-dev/seo-auditor)
+- [GitHub Repository](https://github.com/robbiecalvin/seo-auditor)
