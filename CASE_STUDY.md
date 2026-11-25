@@ -30,14 +30,23 @@ python -m seo_auditor.cli https://example.com
 ## Limitations
 A passing dependency audit is not a functional crawler test. No measured SEO ranking improvement, crawl throughput or comprehensive accuracy benchmark is claimed. Keep SMTP credentials out of Git.
 
+## Reproducible fixture demonstration
+
+Run the offline fixture suite from the repository root after installing the requirements above.
+
+```sh
+python -m unittest discover -s tests -v
+```
+
+Two synthetic pages share a title and meta description, and the home page links to a missing page. The fixture expects statuses 200, 200 and 404, one image missing alt text on the home page, and the missing URL listed as a broken link. Both report formats should be produced, with three data rows in CSV and the fixture title visible in HTML.
+
 ## Resume summary
 Developed a Python technical SEO crawler with automated metadata checks, structured reporting and containerized execution.
 
 ## Verified CI evidence — 2026-11-25
 
-pip-audit reported no known vulnerabilities in the audited requirements. This is not a functional crawler test or a security guarantee.
+Five offline functional tests passed on Python 3.11, covering crawl status, metadata and images, broken links, duplicate detection, and CSV and HTML reports. The previous run exposed a report-rendering failure when a non-200 response had no broken-link list. The fix preserves the CSV field and skips the HTML details block for an absent or empty list. In the passing run, pip-audit reported no known vulnerabilities in the pinned requirements.
 
-- [GitHub Actions run](https://github.com/robbiecalvin/seo-auditor/actions/runs/45641459553)
-- [Tested revision](https://github.com/robbiecalvin/seo-auditor/commit/7cebd91c0075ce058e13687b19e160d70eb34972)
-
-Results were inspected from completed job logs. They apply to the linked revision and executed checks only.
+- [Passing GitHub Actions run](https://github.com/robbiecalvin/seo-auditor/actions/runs/45644423442)
+- [Tested revision](https://github.com/robbiecalvin/seo-auditor/commit/32924d352ccc5cd1980beed1eacf95232839e06b)
+- [Original failing run](https://github.com/robbiecalvin/seo-auditor/actions/runs/45643587873)
