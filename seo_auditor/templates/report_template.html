@@ -45,7 +45,7 @@
                     <td>{{ row['Missing ALT Images'] }}</td>
                     <td>
                         {{ row['Broken Links'] }}
-                        {% if row['Broken Links List']|length > 0 %}
+                        {% if row['Broken Links List'] %}
                         <details>
                             <summary>View Broken Links</summary>
                             <ul class="broken-link-list">
@@ -113,3 +113,4 @@
 
 </body>
 </html>
+
