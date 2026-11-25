@@ -40,6 +40,12 @@ python -m unittest discover -s tests -v
 
 Two synthetic pages share a title and meta description, and the home page links to a missing page. The fixture expects statuses 200, 200 and 404, one image missing alt text on the home page, and the missing URL listed as a broken link. Both report formats should be produced, with three data rows in CSV and the fixture title visible in HTML.
 
+## Example report
+
+The screenshot shows the HTML generated from the offline fixture above. The crawler recorded two successful pages, a 404, duplicate metadata, and a broken link. The CSV and HTML were generated at revision `5a9d1b23c957` on Python 3.12 with locally resolved dependencies. All five fixture tests passed on that local run. The screenshot was captured in Chromium.
+
+![Generated SEO Audit Report showing two 200 responses, one 404, a broken link, and duplicate metadata](docs/images/synthetic-audit-report.jpg)
+
 ## Resume summary
 Developed a Python technical SEO crawler with automated metadata checks, structured reporting and containerized execution.
 
