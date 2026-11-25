@@ -32,3 +32,12 @@ A passing dependency audit is not a functional crawler test. No measured SEO ran
 
 ## Resume summary
 Developed a Python technical SEO crawler with automated metadata checks, structured reporting and containerized execution.
+
+## Verified CI evidence — 2026-11-25
+
+pip-audit reported no known vulnerabilities in the audited requirements. This is not a functional crawler test or a security guarantee.
+
+- [GitHub Actions run](https://github.com/robbiecalvin/seo-auditor/actions/runs/45641459553)
+- [Tested revision](https://github.com/robbiecalvin/seo-auditor/commit/7cebd91c0075ce058e13687b19e160d70eb34972)
+
+Results were inspected from completed job logs. They apply to the linked revision and executed checks only.
