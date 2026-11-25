@@ -90,3 +90,7 @@ This project is licensed under the MIT License.
 
 - [Docker Hub Repository](https://hub.docker.com/repository/docker/robertcalvindev/seo-auditor/general)
 - [GitHub Repository](https://github.com/robbiecalvin/seo-auditor)
+
+## Engineering verification
+
+The repository includes Python packaging metadata, a Dockerfile and report-generation code. For a reproducible smoke check, crawl a small website you control and compare CSV/HTML output against known page titles, broken links and missing image alt attributes. Review SMTP configuration separately and keep credentials outside version control. No automated test pass rate is asserted here.
