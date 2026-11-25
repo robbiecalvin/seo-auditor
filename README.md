@@ -94,3 +94,8 @@ This project is licensed under the MIT License.
 ## Engineering verification
 
 The repository includes Python packaging metadata, a Dockerfile and report-generation code. For a reproducible smoke check, crawl a small website you control and compare CSV/HTML output against known page titles, broken links and missing image alt attributes. Review SMTP configuration separately and keep credentials outside version control. No automated test pass rate is asserted here.
+
+
+## Technical portfolio case study
+
+[Read the technical case study](CASE_STUDY.md) for the problem, architecture, engineering decisions, evaluation evidence and limitations.
